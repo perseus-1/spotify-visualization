@@ -1,53 +1,88 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset='utf-8'>
-<title>Spotify Visualizations</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 20px; background-color: #f8f9fa; }
-h2 { color: #343a40; }
-iframe { border: none; margin-bottom: 40px; width: 100%; height: 600px; }
-img { max-width: 100%; height: auto; margin-bottom: 40px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Spotify Visualizations Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px 0;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
 </head>
 <body>
-<h1>Spotify Data Visualizations</h1>
-<h2> New 3D Visualizations</h2>
-<iframe src='valence_speechiness_tempo.html'></iframe>
-<iframe src='instrumentalness_liveness_speechiness.html'></iframe>
-<iframe src='tempo_acousticness_energy.html'></iframe>
-<iframe src='energy_valence_speechiness.html'></iframe>
-<iframe src='danceability_acousticness_energy.html'></iframe>
-<iframe src='danceability_energy_valence.html'></iframe>
 
-<h2> Original Visualizations</h2>
-<iframe src='danceability_vs_energy.html'></iframe>
-<iframe src='binned_popularity_vs_danceability.html'></iframe>
-<iframe src='binned_popularity_vs_energy.html'></iframe>
-<iframe src='binned_popularity_vs_tempo.html'></iframe>
-<iframe src='binned_popularity_vs_valence.html'></iframe>
-<iframe src='3d_scatter_plot.html'></iframe>
-<iframe src='valence_vs_loudness.html'></iframe>
-<iframe src='valence_vs_speechiness.html'></iframe>
-<iframe src='top_genres_barplot.html'></iframe>
-<iframe src='top100_by_genre_over_years.html'></iframe>
-<iframe src='valence_vs_energy.html'></iframe>
-<iframe src='feature_correlation_heatmap.html'></iframe>
-<iframe src='loudness_speechiness_trends.html'></iframe>
-<iframe src='popularity_distribution.html'></iframe>
-<iframe src='danceability_vs_energy_scatter.html'></iframe>
-<iframe src='explicit_content_boxplot.html'></iframe>
+  <h1>Spotify Visualizations</h1>
 
-<h2> Explanation Images</h2>
-<img src='exp_55.png'>
-<img src='exp_44.png'>
-<img src='exp_33.png'>
-<img src='exp_22.png'>
-<img src='exp_11.png'>
-<img src='keys_explain.png'>
-<img src='top_100_over_time_explainnation.png'>
+  <div class="section">
+    <h2>📊 3D Visualizations</h2>
+    <ul>
+      <li><a href="valence_speechiness_tempo.html" target="_blank">Valence vs Speechiness vs Tempo</a></li>
+      <li><a href="instrumentalness_liveness_speechiness.html" target="_blank">Instrumentalness vs Liveness vs Speechiness</a></li>
+      <li><a href="tempo_acousticness_energy.html" target="_blank">Tempo vs Acousticness vs Energy</a></li>
+      <li><a href="energy_valence_speechiness.html" target="_blank">Energy vs Valence vs Speechiness</a></li>
+      <li><a href="danceability_acousticness_energy.html" target="_blank">Danceability vs Acousticness vs Energy</a></li>
+      <li><a href="danceability_energy_valence.html" target="_blank">Danceability vs Energy vs Valence</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📈 2D Visualizations</h2>
+    <ul>
+      <li><a href="danceability_vs_energy.html" target="_blank">Danceability vs Energy</a></li>
+      <li><a href="binned_popularity_vs_danceability.html" target="_blank">Binned Popularity vs Danceability</a></li>
+      <li><a href="binned_popularity_vs_energy.html" target="_blank">Binned Popularity vs Energy</a></li>
+      <li><a href="binned_popularity_vs_tempo.html" target="_blank">Binned Popularity vs Tempo</a></li>
+      <li><a href="binned_popularity_vs_valence.html" target="_blank">Binned Popularity vs Valence</a></li>
+      <li><a href="3d_scatter_plot.html" target="_blank">3D Scatter: Energy, Danceability, Popularity</a></li>
+      <li><a href="valence_vs_loudness.html" target="_blank">Valence vs Loudness</a></li>
+      <li><a href="valence_vs_speechiness.html" target="_blank">Valence vs Speechiness</a></li>
+      <li><a href="top_genres_barplot.html" target="_blank">Top Genres Barplot</a></li>
+      <li><a href="top100_by_genre_over_years.html" target="_blank">Top 100 by Genre Over Years</a></li>
+      <li><a href="valence_vs_energy.html" target="_blank">Valence vs Energy</a></li>
+      <li><a href="feature_correlation_heatmap.html" target="_blank">Feature Correlation Heatmap</a></li>
+      <li><a href="loudness_speechiness_trends.html" target="_blank">Loudness & Speechiness Trends</a></li>
+      <li><a href="popularity_distribution.html" target="_blank">Popularity Distribution</a></li>
+      <li><a href="danceability_vs_energy_scatter.html" target="_blank">Danceability vs Energy Scatter</a></li>
+      <li><a href="explicit_content_boxplot.html" target="_blank">Explicit Content Boxplot</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🖼️ Explanation Images</h2>
+    <ul>
+      <li><a href="exp_55.png" target="_blank">Explanation 55</a></li>
+      <li><a href="exp_44.png" target="_blank">Explanation 44</a></li>
+      <li><a href="exp_33.png" target="_blank">Explanation 33</a></li>
+      <li><a href="exp_22.png" target="_blank">Explanation 22</a></li>
+      <li><a href="exp_11.png" target="_blank">Explanation 11</a></li>
+      <li><a href="keys_explain.png" target="_blank">Musical Keys Explanation</a></li>
+      <li><a href="top_100_over_time_explainnation.png" target="_blank">Top 100 Trends Explanation</a></li>
+    </ul>
+  </div>
+
 </body>
 </html>
-
-
